@@ -1,0 +1,239 @@
+{
+  "title": "Gestione del trasporto scolastico",
+  "description": "Prototipo navigabile per consultare linee, fermate e orari, verificare iscrizioni e turni degli accompagnatori e iscrivere un alunno a una fermata. Dati e nomi sono inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "riepilogo",
+      "title": "Riepilogo",
+      "description": "Panoramica delle linee attive e dei posti occupati. La tabella consente di cercare e filtrare le linee.",
+      "metrics": [
+        {
+          "label": "Linee attive",
+          "value": "3"
+        },
+        {
+          "label": "Iscrizioni",
+          "value": "30"
+        },
+        {
+          "label": "Posti disponibili",
+          "value": "15"
+        },
+        {
+          "label": "Accompagnatori in turno",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Linea",
+        "Fermata principale",
+        "Partenza",
+        "Posti totali",
+        "Posti occupati",
+        "Posti disponibili"
+      ],
+      "rows": [
+        [
+          "Lumo 1",
+          "Piazza delle Nuvole",
+          "07:35",
+          "18",
+          "12",
+          "6"
+        ],
+        [
+          "Vela 2",
+          "Giardino Blu",
+          "07:40",
+          "16",
+          "11",
+          "5"
+        ],
+        [
+          "Nubi 3",
+          "Lago Quieto",
+          "07:30",
+          "14",
+          "7",
+          "7"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "linee-fermate",
+      "title": "Linee e fermate",
+      "description": "Consulta l’ordine delle fermate e gli orari previsti per ciascuna linea. La tabella è filtrabile per linea e fermata.",
+      "metrics": [
+        {
+          "label": "Fermate configurate",
+          "value": "6"
+        },
+        {
+          "label": "Linee",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Linea",
+        "Fermata",
+        "Ordine",
+        "Orario",
+        "Posti assegnati",
+        "Accompagnatore"
+      ],
+      "rows": [
+        [
+          "Lumo 1",
+          "Piazza delle Nuvole",
+          "1",
+          "07:35",
+          "4",
+          "Neri Vento"
+        ],
+        [
+          "Lumo 1",
+          "Bosco dei Sassi",
+          "2",
+          "07:48",
+          "8",
+          "Neri Vento"
+        ],
+        [
+          "Vela 2",
+          "Giardino Blu",
+          "1",
+          "07:40",
+          "5",
+          "Lilla Riva"
+        ],
+        [
+          "Vela 2",
+          "Torre di Carta",
+          "2",
+          "07:52",
+          "6",
+          "Lilla Riva"
+        ],
+        [
+          "Nubi 3",
+          "Lago Quieto",
+          "1",
+          "07:30",
+          "3",
+          "Teo Bruma"
+        ],
+        [
+          "Nubi 3",
+          "Colle dei Gelsi",
+          "2",
+          "07:44",
+          "4",
+          "Teo Bruma"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "alunni-iscritti",
+      "title": "Alunni iscritti",
+      "description": "Elenco degli alunni assegnati alle linee e alle fermate. Usa la ricerca o i filtri per individuare le iscrizioni.",
+      "metrics": [
+        {
+          "label": "Alunni iscritti",
+          "value": "30"
+        },
+        {
+          "label": "Linee utilizzate",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Alunno",
+        "Linea",
+        "Fermata",
+        "Orario",
+        "Stato iscrizione"
+      ],
+      "rows": [
+        [
+          "Mira Lume",
+          "Lumo 1",
+          "Piazza delle Nuvole",
+          "07:35",
+          "Attiva"
+        ],
+        [
+          "Timo Selva",
+          "Lumo 1",
+          "Bosco dei Sassi",
+          "07:48",
+          "Attiva"
+        ],
+        [
+          "Nela Brina",
+          "Lumo 1",
+          "Bosco dei Sassi",
+          "07:48",
+          "Attiva"
+        ],
+        [
+          "Rilo Fonte",
+          "Vela 2",
+          "Giardino Blu",
+          "07:40",
+          "Attiva"
+        ],
+        [
+          "Sira Duna",
+          "Vela 2",
+          "Torre di Carta",
+          "07:52",
+          "Attiva"
+        ],
+        [
+          "Omi Cedro",
+          "Nubi 3",
+          "Lago Quieto",
+          "07:30",
+          "Attiva"
+        ],
+        [
+          "Liva Alba",
+          "Nubi 3",
+          "Colle dei Gelsi",
+          "07:44",
+          "Attiva"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "iscrizione",
+      "title": "Iscrivi a una fermata",
+      "description": "Registra un alunno indicando nome, linea e fermata. Verifica la disponibilità dei posti nel riepilogo prima di confermare.",
+      "metrics": [
+        {
+          "label": "Linee disponibili",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Alunno",
+        "Linea",
+        "Fermata",
+        "Orario",
+        "Stato iscrizione"
+      ],
+      "rows": [],
+      "form": [
+        "Alunno",
+        "Linea",
+        "Fermata",
+        "Orario",
+        "Stato iscrizione"
+      ]
+    }
+  ]
+}
